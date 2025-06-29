@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply animate-fade-in;
+  }
+  
+  .typing-indicator {
+    @apply animate-pulse-slow;
+  }
+  
+  .room-item {
+    @apply transition-all duration-200 hover:bg-gray-100;
+  }
+  
+  .user-item {
+    @apply transition-all duration-200 hover:bg-gray-50;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Message animations */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-enter {
+  animation: slideInFromBottom 0.3s ease-out;
+}
+
+/* Connection status indicator */
+.connection-indicator {
+  @apply inline-block w-2 h-2 rounded-full;
+}
+
+.connection-indicator.connected {
+  @apply bg-green-500;
+}
+
+.connection-indicator.disconnected {
+  @apply bg-red-500;
+}
+
+.connection-indicator.connecting {
+  @apply bg-yellow-500 animate-pulse;
+} 
