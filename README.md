@@ -203,62 +203,6 @@ Qchat/
 - Compression for faster responses
 - Graceful error handling
 
-## 🚀 Development
-
-### Backend Development
-```bash
-cd server
-npm run dev      # Start development server with hot reload
-npm run build    # Build TypeScript to JavaScript
-npm run start    # Start production server
-npm run lint     # Run ESLint
-npm run lint:fix # Fix ESLint issues
-```
-
-### Frontend Development
-```bash
-cd client
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-npm run lint:fix # Fix ESLint issues
-```
-
-## 🧪 Testing
-
-### Backend Testing
-```bash
-cd server
-npm test         # Run tests
-npm run test:watch # Run tests in watch mode
-```
-
-## 📱 Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## 🚀 Deployment
-
-### Backend Deployment
-The backend can be deployed to:
-- Heroku
-- Railway
-- DigitalOcean App Platform
-- AWS Elastic Beanstalk
-- Docker containers
-
-### Frontend Deployment
-The frontend can be deployed to:
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
-- Any static hosting service
-
 ### Environment Variables for Production
 
 **Backend (.env)**
@@ -273,29 +217,8 @@ CLIENT_URL=https://your-frontend-domain.com
 VITE_SERVER_URL=https://your-backend-domain.com
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Socket.io](https://socket.io/) for real-time communication
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-- [Lucide React](https://lucide.dev/) for icons
-- [Vite](https://vitejs.dev/) for build tooling
-
-## 📞 Support
-
-If you have any questions or need help, please open an issue on GitHub.
-
----
 
 **Happy Chatting! 🎉** 
