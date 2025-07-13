@@ -123,9 +123,9 @@ process.on('uncaughtException', (error) => {
 const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
-  console.log(`🚀 QChat Server running on port ${PORT}`);
-  console.log(`📡 Socket.io server ready for connections`);
-  console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔗 Server URL: http://localhost:${PORT}`);
-  console.log(`📊 API Health: http://localhost:${PORT}/api/health`);
+  console.log(`QChat Server running on port ${PORT}`);
+  console.log(`Socket.io server ready for connections`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`Server URL: http://localhost:${PORT}`);
+  console.log(`API Health: http://localhost:${PORT}/api/health`);
 }); 
